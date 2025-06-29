@@ -1,0 +1,15 @@
+
+:root {
+  --bg: #f9f9f9; --card:#fff; --txt:#000; --btn:#28a745; --btn-hover:#218838;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121212; --card:#1e1e1e; --txt:#eee; --btn:#2e7d32; --btn-hover:#256627; }
+}
+body { font-family: Arial, sans-serif; background: var(--bg); color: var(--txt);
+       text-align:center; padding-top:5rem; transition:.3s }
+.container { background: var(--card); padding:2.5rem; width:min(90%,28rem);
+             margin:auto; box-shadow:0 0 .9rem rgba(0,0,0,.1); border-radius:1rem }
+input[type=text]{width:80%;padding:.6rem;margin-bottom:1.2rem;border-radius:.4rem}
+button{padding:.6rem 1.2rem;background:var(--btn);color:#fff;border:none;
+        cursor:pointer;border-radius:.4rem;transition:.2s}
+button:hover{background:var(--btn-hover)}
